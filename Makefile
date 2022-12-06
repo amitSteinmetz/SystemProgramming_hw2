@@ -1,11 +1,11 @@
 CC = gcc 
 CFLAGS = -Wall -g 
 
-all: main libmy_mat.a
+all: connections libmy_mat.a
 
 my_mat: libmy_mat.a
 
-main: main.o libmy_mat.a
+connections: main.o libmy_mat.a
 	$(CC) $(CFLAGS) main.o libmy_mat.a -lm -o main
 
 clean:

@@ -1,18 +1,16 @@
 #include "my_mat.h"
-#include "stdbool.h"
 #include <stdio.h>
-#define mat_size 10
+
 
 int main() {
 
-    int input_matrix[mat_size][mat_size];
+    int input_matrix[MAT_SIZE][MAT_SIZE];
     int i = 0, j = 0;
     bool FLAG = true, is_path = false;
     char choice;
 
 
     while (FLAG) {
-        printf("Please enter your choice: ");
         scanf(" %c", &choice);
         switch (choice) {
             case 'A':
